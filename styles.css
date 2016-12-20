@@ -1,0 +1,35 @@
+body{
+	/* hide everything outside of body */
+	overflow: hidden;
+}
+
+
+#pages{
+	width: 200vw;/* we want pages div to be twice the width of the screen. vw = viewport width*/
+}
+
+#page1, #page2{
+	width: 100vw;
+	float: left;
+	height: 100vh;
+	position: relative;
+	transition: all 3s;
+	right: 0px;
+}
+
+#arrow1, #arrow2{
+	position: absolute;
+	top: 50%; /*halfway down the page. 50% from the first thing they run into */
+	background-color: blue;
+	color: white;
+	height: 50px;
+	width: 50px;
+}
+
+#arrow1{
+	right: 0px;
+}
+
+#arrow2{
+	left: 0px;
+}
